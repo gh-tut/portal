@@ -9,7 +9,7 @@ function Form(){
     return(
         <div>
             <Button style = {style}
-                onClick ={() => window.location.href = 'https://docs.google.com/forms/d/1Xc8rAXzU9-kA0P7n0m0JyKtN8tQJNoqZ0TgaU6kfKDQ/viewform?edit_requested=true'}
+                onClick ={() => window.location.href = 'https://forms.gle/WQ3zw2AJ32Gz1Cmu8'}
             > Click me to Book the room</Button>
         </div>
     )
