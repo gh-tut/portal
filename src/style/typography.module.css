@@ -1,0 +1,65 @@
+@media screen and (min-width: 767px) { 
+    .h3{
+        font-size: 3rem;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        line-height: 1.04;
+        letter-spacing: 0em;
+        color : #ffffff;
+    }
+    .h5{
+        font-size: 1.5rem;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        line-height: 1.33;
+        letter-spacing: 0em;
+        color : #ffffff;
+    }
+    .h6{
+        font-size: 1.25rem;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 500;
+        line-height: 1.6;
+        letter-spacing: 0.0075em;
+    }
+    .h6sub{
+        font-size: 1rem;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        line-height: 1.75;
+        letter-spacing: 0.00938em;
+    }
+}
+@media screen and (max-width: 479px) { 
+    .h3{
+        font-size: 1.5rem;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        line-height: 1.04;
+        letter-spacing: 0em;
+        margin-bottom:0;
+        color : #ffffff;
+    }
+    .h5{
+        font-size: 0.8rem;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        line-height: 1.33;
+        letter-spacing: 0em;
+        color : #ffffff;
+    }
+    .h6{
+        font-size: 0.5rem;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 0;
+        line-height: 1.75;
+        letter-spacing: 0.00938em;
+    }
+    .h6sub{
+        font-size: 0.5rem;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        line-height: 1.75;
+        letter-spacing: 0.00938em;
+    }
+}
