@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button'
 
 function Form(){
     const style = {
-        height : '1000px',
+        height : '70vh',
         width : '100%',
     }
     return(

@@ -26,7 +26,7 @@ export default function Header(props) {
                         :
                         <SimpleMenu onClick={props.handleClick}/>
                     }
-                    {screenWidth >= 476 ? <Button color="inherit">Login出来ないよ</Button> : ""}
+                    {/*screenWidth >= 476 ? <Button color="inherit">Login出来ないよ</Button> : ""*/}
                 </Toolbar>
             </AppBar>
         </div>
