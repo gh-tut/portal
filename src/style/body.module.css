@@ -1,6 +1,7 @@
 .body {
   margin: 64px 0 0 0;
   font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  flex: 1;
 }
 @media screen and (max-width: 479px) {
   .body {

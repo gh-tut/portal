@@ -26,10 +26,11 @@ const inter = {
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: pink[500]
+      main: '#ee4578'
     },
-    secondary: { main: teal.A400 }
+    secondary: { main: '#fdf0f9' }
   },
+
   typography: {
     fontFamily: [
       'Inter',
