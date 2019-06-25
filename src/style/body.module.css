@@ -1,10 +1,10 @@
-@media screen and (min-width: 767px) { 
-    .body{
-        margin-top : 64px
-    }
+.body {
+  margin: 64px 0 0 0;
+  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
-@media screen and (max-width: 479px) { 
-    .body{
-        margin-top : 32px
-    }
+@media screen and (max-width: 479px) {
+  .body {
+    margin: 32px 0 0 0;
+    font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  }
 }

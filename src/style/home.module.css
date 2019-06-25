@@ -1,44 +1,44 @@
-
 /* @media screen and (min-width: 767px) {  */
-    .body{
-        height : 200px;
-        background : #554e4e;
-        padding : 50px;
-        align-items: center;
-    }
-    .font{
-        color : #ffffff;
-    
-    }
-    .TextArea{
-        padding: 20px;
-    
-    }
+.body {
+  height: 200px;
+  background: #f2f2f2;
+  padding: 50px;
+  align-items: center;
+  margin: -8px;
+  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+.font {
+  color: #000;
+}
+.TextArea {
+  padding: 20px;
+}
 /* } */
-@media screen and (max-width: 479px) { 
-    .body{
-        height : 200px;
-        background : #554e4e;
-        padding : 10px;
-        align-items: center;
-    }
-    .body2{
-        height : 200px;
-        background : #ffffff;
-        padding : 10px;
-        align-items: center;
-        
-    }
-    .font{
-        color : #ffffff;
-    
-    }
-    .TextArea{
-        padding: 20px;
-    }
+@media screen and (max-width: 479px) {
+  .body {
+    height: 200px;
+    /* background: #f2f2f2; */
+    padding: 10px;
+    align-items: center;
+    margin: 0;
+    font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  }
+  .body2 {
+    height: 200px;
+    background: #ffffff;
+    padding: 10px;
+    align-items: center;
+    margin: 0;
+    font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  }
+  .font {
+    color: #000;
+  }
+  .TextArea {
+    padding: 20px;
+  }
 
-    .grid{
-        flex-direction: column;
-    }
-    
+  .grid {
+    flex-direction: column;
+  }
 }

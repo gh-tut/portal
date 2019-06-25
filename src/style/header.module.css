@@ -1,27 +1,26 @@
-@media screen and (min-width: 767px) { 
-    .root{
-        flex-grow: 1;
-    }
-    .title{
-        flex-grow: 1;
-        font-size: 1.25rem;
-        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-        font-weight: 500;
-        line-height: 1.6;
-        letter-spacing: 0.0075em;
-    }
+.root {
+  flex-grow: 1;
+  margin: 0;
 }
-@media screen and (max-width: 479px) { 
-    .root{
-        flex-grow: 1;
-    }
-    .title{
-        flex-grow: 1;
-        font-size: 0.75rem;
-        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-        font-weight: 500;
-        line-height: 1.6;
-        letter-spacing: 0.0075em;
-    }
+.title {
+  flex-grow: 1;
+  font-size: 1.25rem;
+  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+}
 
+@media screen and (max-width: 479px) {
+  .root {
+    flex-grow: 1;
+  }
+  .title {
+    flex-grow: 1;
+    font-size: 0.75rem;
+    font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+  }
 }
