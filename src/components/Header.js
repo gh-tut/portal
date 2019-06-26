@@ -1,12 +1,10 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import SimpleMenu from '../components/SimpleMenu';
 import Styles from '../style/header.module.css';
-import EventListener from 'react-event-listener';
 import { Container } from '@material-ui/core';
 import Home from '@material-ui/icons/Home';
 import AddBox from '@material-ui/icons/AddBox';
@@ -16,7 +14,7 @@ export default function Header(props) {
   const screenWidth = props.width;
   return (
     <div className={Styles.root}>
-      <AppBar position="fixed">
+      <AppBar position="sticky">
         <Container maxWidth="md">
           <Toolbar>
             <p className={Styles.title}>TUT GH Portal</p>

@@ -2,13 +2,10 @@ import React, { useState } from 'react';
 import EventListener from 'react-event-listener';
 import Header from './Header';
 import Body from './Body';
-import Footer from './Footer';
-import { Box, Container } from '@material-ui/core';
-import Style from '../style/body.module.css';
 import { createMuiTheme } from '@material-ui/core/styles';
-import { pink, teal } from '@material-ui/core/colors';
 import { ThemeProvider } from '@material-ui/styles';
 import InterWoff2 from '../fonts/Inter-SemiBold.woff2';
+import styled from 'styled-components/macro';
 
 const inter = {
   fontFamily: 'Inter',
@@ -60,20 +57,27 @@ function App() {
   const [windowSize, setWindowSize] = useState(window.parent.screen.width);
   const handleChange = (event, value) => {
     setPageState(value);
-    console.log(pageState);
   };
   const handleClick = event => {
     setPageState(event);
-    console.log(pageState);
   };
   const handleResize = () => {
     setWindowSize(window.innerWidth);
-    console.log(windowSize);
   };
 
   return (
     <ThemeProvider theme={theme}>
-      <Container maxWidth="md">
+      <div
+        css={`
+          margin: -8px;
+          display: ;flex;
+          flex-direction: column;
+          height: 100%;
+          flex: 1;
+          min-height: 100vh;
+          background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+        `}
+      >
         <EventListener target="window" onResize={handleResize} />
         <Header
           pageState={pageState}
@@ -81,11 +85,8 @@ function App() {
           handleClick={handleClick}
           width={windowSize}
         />
-        <Box className={Style.body}>
-          <Body pageState={pageState} width={windowSize} />
-          <Footer width={windowSize} />
-        </Box>
-      </Container>
+        <Body pageState={pageState} width={windowSize} />
+      </div>
     </ThemeProvider>
   );
 }
