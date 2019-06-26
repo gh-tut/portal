@@ -21,6 +21,7 @@ const SubTitle = styled.p`
   font-family: 'Inter', 'san';
   size: 1rem;
   color: darkred;
+  /* margin-bottom: 10px; */
 `;
 const ReserveBtn = styled.a`
   height: 1.5rem;
@@ -46,10 +47,10 @@ const ReserveBtn = styled.a`
 const Card = styled.div`
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 200px;
-  max-width: 500px;
-  max-height: 600px;
+  width: 200px;
+  height: 250px;
+  max-width: 250px;
+  max-height: 300px;
   margin: 10px;
   margin-bottom: 30px;
   padding: 20px;
@@ -65,6 +66,7 @@ const Grid = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 15px;
   @media screen and (min-width: 475px) {
     flex-direction: row;
