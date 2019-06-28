@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import IFrame from '../components/IFrame';
+import CalendarContainer from '../components/CalendarContainer';
 import styled from 'styled-components/macro';
 import Selector from '../components/Selector';
+
 
 const iframe = `<iframe
         src="https://calendar.google.com/calendar/b/2/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=MTg2OHV0bTQwbjFtNWd0YThwMm02YTdnMWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23616161"
@@ -38,7 +40,9 @@ const statusOption = [
 ];
 
 function renderCalendar(option) {
+
   let iframe = `<iframe src="https://calendar.google.com/calendar/b/2/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=NHAxZGNndWwyNmJoaDhubDU4bzR0bGgxYThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23EF6C00" width="800" height="600" frameborder="0" scrolling="no"></iframe>`;
+  let url = ""
   switch (option) {
     case `Meeting Room 1`:
       iframe = `<iframe src="https://calendar.google.com/calendar/b/2/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=NHAxZGNndWwyNmJoaDhubDU4bzR0bGgxYThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23EF6C00" width="800" height="600" frameborder="0" scrolling="no"></iframe>`;
@@ -62,7 +66,8 @@ function renderCalendar(option) {
       iframe = `<iframe src="https://calendar.google.com/calendar/b/2/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=NHAxZGNndWwyNmJoaDhubDU4bzR0bGgxYThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23EF6C00" width="800" height="600" frameborder="0" scrolling="no"></iframe>`;
       break;
   }
-  return <IFrame iframe={iframe} />;
+  /*return <IFrame iframe={iframe} />;*/
+  return <CalendarContainer name = {option} url = {url}/>
 }
 function Calender() {
   const [currentFilter, setCurrentFilter] = useState('Meeting Room 1');
