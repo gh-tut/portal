@@ -1,3 +1,14 @@
+#TUT Global House Portal System
+
+## Status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4df18d11-fa1a-46ca-b34a-6590fab076eb/deploy-status)](https://app.netlify.com/sites/portal-gh-tut/deploys)
+
+## Release Notes
+
+- 2019.6.29 Released version 0
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
